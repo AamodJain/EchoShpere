@@ -1,5 +1,6 @@
 function getFirstAndLastName(fullName) {
     // Split the full name by spaces
+    // console.log(fullName);
     const nameParts = fullName.trim().split(' ');
   
     // Get the first name (first part of the array)
