@@ -26,12 +26,12 @@ This project marks my first foray into full-stack development, incorporating Mon
 
 ## Screenshots
 
+*Login & SignUp page with secure JWT authentication.*
 ![SignUp Page](assets/chat-app-signup.png)
 ![Login Page](assets/chat-app-login.png)
-*Login & SignUp page with secure JWT authentication.*
 
+*Real-time chat interface with a sleek design.*
 ![Chat Interface](assets/chat-app1.png)
 ![Chat Interface](assets/chat-app2.png)
 ![Chat Interface](assets/chat-app3.png)
-*Real-time chat interface with a sleek design.*
 
