@@ -56,7 +56,9 @@ const signup = () => {
 
                         <Link to="/login" className='text-sm hover:underline hover:text-blue-600 mt-3 inline-block'>Already have and account ?</Link>
                         <div>
-                            <button className='btn w-full mt-2'>Signup</button>
+                            <button className='btn w-full mt-2' disabled = {loading}>
+                                {loading ? <div className='loading loading-spinner'></div> : 'SignUp'}
+                                </button>
                         </div>
                     </form>
                 </div>
