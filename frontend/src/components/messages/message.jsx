@@ -10,6 +10,7 @@ const message = ({message}) => {
     const chatClass = !fromMe ? 'chat-start' : 'chat-end';
     const chatColor = fromMe ? 'bg-blue-500' : '';
     const profilepic = fromMe ? authUser.profilePic : selectedConversation?.profilePic;
+    const jumpClass = message.shouldJump ? 'jump' : '';
     return (
         <div className={`chat ${chatClass}`}>
             <div className="chat-image avatar">
@@ -19,7 +20,7 @@ const message = ({message}) => {
                         src= {profilepic} />
                 </div>
             </div>
-            <div className= {`chat-bubble text-white ${chatColor}`}>{message.message}</div>
+            <div className= {`chat-bubble text-white ${chatColor} ${jumpClass}`}>{message.message}</div>
             <div className='chat-footer text-xs opacity-70 gap-1 items-center mt-1'>{extractTime(message.createdAt)}</div>
         </div>
     )

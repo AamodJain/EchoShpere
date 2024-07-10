@@ -1,5 +1,7 @@
 import Conversation from "../models/Conversation.model.js";
 import Message from "../models/Message.model.js";
+import { getRecieverSocketId } from "../socket/socket.js";
+import { io } from "../socket/socket.js";
 
 export const sendMessage = async (req, res) => {
     try {
@@ -25,10 +27,13 @@ export const sendMessage = async (req, res) => {
             conversation.messages.push(newMessage);
         }
         await Promise.all([conversation.save(), newMessage.save()]);
-        res.status(200).json(newMessage);
-
+        
         // socket.io to be added here
-
+        const receiverSocketId = getRecieverSocketId(receiverId);
+        if (receiverSocketId) {
+            io.to(receiverSocketId).emit("newMessage", newMessage);
+        }
+        res.status(201).json(newMessage);
     } catch (error) {
         console.log("error in sendMessage controller \n", error.message);
         res.status(500).json({ error: "Internal Server Error" });

@@ -3,11 +3,13 @@ import Message from './message'
 import useGetMessages from '../../hooks/useGetMessages';
 import MessageSkeleton from '../skeletons/messageSkeleton';
 import { useRef } from 'react';
-import { set } from 'mongoose';
+import useListenMessages from '../../hooks/useListenMessages';
 
 const Messages = () => {
   const {loading , Messages} = useGetMessages();
   const lastMessageRef = useRef();
+
+  useListenMessages();
 
   useEffect(() => {
     setTimeout(() => {
@@ -19,6 +21,7 @@ const Messages = () => {
   return (
     <div className='px-4 overflow-auto flex-1'>
       {!loading && (Messages.length > 0) && Messages.map((message) => (
+        
          <div key={message._id} ref={lastMessageRef}>
           <Message  message={message}/>
         </div>
