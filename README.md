@@ -1,6 +1,6 @@
 <div style="display: flex; align-items: center;">
-  <img src="assets/chat-app-icon-32.png" alt="Icon" style="width: 32px; height: 32px; margin-right: 8px;">
-  <h1 style="font-size: 24px; font-weight: bold; margin: 0;">EchoSphere</h1>
+  <div><img src="assets/chat-app-icon-32.png" alt="Icon" style="width: 32px; height: 32px; margin-right: 8px;"></div>
+  <div><h1 style="font-size: 24px; font-weight: bold; margin: 0;">EchoSphere</h1></div>
 </div>
 
 ---
