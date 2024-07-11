@@ -1,9 +1,5 @@
-<div style="display: flex; align-items: center;">
-  <div><img src="assets/chat-app-icon-32.png" alt="Icon" style="width: 32px; height: 32px; margin-right: 8px;"></div>
-  <div><h1 style="font-size: 24px; font-weight: bold; margin: 0;">EchoSphere</h1></div>
-</div>
-
----
+# EchoSphere
+![EchoSphere Logo](assets/chat-app-icon-32.png) 
 
 Welcome to **EchoSphere** – a cutting-edge, real-time chat application that redefines the way you communicate. Built with the robust MERN stack and styled with Tailwind CSS, EchoSphere offers seamless, real-time messaging powered by Socket.IO. With state management handled by Zustand and secure authentication through JWT, EchoSphere ensures a fast, responsive, and secure chatting experience.
 
