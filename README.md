@@ -1,4 +1,4 @@
-# EchoSphere ![EchoSphere Logo](assets/chat-app-icon-32.png) 
+# EchoSphere   ![EchoSphere Logo](assets/chat-app-icon-32.png) 
 
 Welcome to **EchoSphere** – a cutting-edge, real-time chat application that redefines the way you communicate. Built with the robust MERN stack and styled with Tailwind CSS, EchoSphere offers seamless, real-time messaging powered by Socket.IO. With state management handled by Zustand and secure authentication through JWT, EchoSphere ensures a fast, responsive, and secure chatting experience.
 
